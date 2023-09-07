@@ -23,7 +23,7 @@ const { isOpen, result, close } = useModal()
   height: 100vh;
   width: 100vw;
   padding-top: 50vh;
-  padding-left: calc(50vw - 100px);
+  padding-left: calc(50vw - 156px);
   background-color: rgba(0, 0, 0, .2);
 }
 .modal-card {

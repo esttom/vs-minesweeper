@@ -66,7 +66,7 @@ function onClickLevel(level: number) {
     </div>
   </div>
   <div class="game-field">
-    <div class="flex-center" v-for="r in row" :key="r">
+    <div class="flex" v-for="r in row" :key="r">
       <MineBlock
         v-for="c in col" 
         :key="c"
@@ -88,9 +88,8 @@ function onClickLevel(level: number) {
   max-width: 90vw;
   overflow-x: auto;
 }
-.flex-center {
+.flex {
   display: flex;
-  justify-content: center;
 }
 .flex-end {
   display: flex;
