@@ -106,10 +106,12 @@ export function useGame(config: GameConfig) {
     if (game.value.status !== 'init' && game.value.status !== 'playing') {
       return
     }
-    
     if (game.value.status === 'init') {
       generateMines(r, c)
       await realtime?.init(game.value)
+    }
+    if (game.value.fields[r][c].open) {
+      return
     }
 
     if (!opponent) {
